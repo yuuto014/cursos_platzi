@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+header{
+    text-align: center;
+    padding: 20px 10px;
+}
+.container-box{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 30px 20px; 
+    text-align: center;
+    display: grid;
+}
+.article__form{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+}
+.article__form input,
+.article__form label,
+.article__form p{
+    grid-column: 1 / 5;
+    margin: 5px 0;
+}
+.article__form button{
+    grid-column: 2 / 4;
+}
