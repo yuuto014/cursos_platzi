@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | Curso practico de JS en Platzi</title>
+    <link rel="stylesheet" href="./styles/figuras.css">
+</head>
+<body>
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>Este es le primer taller derl curso práctico de JavaScript</p>
+    </header>
+
+    <section class="form-calculator">
+        <h2 class="form-calculator__title">Calcula el Area y perimetro de un cuadraro</h2>
+        <form class="form-calculator__form" for="imput-cuadrado">
+            <label class="form-calculator__form--label">Lado del cuadrado</label>
+            <input class="form-calculator__form--input" id= "input-cuadrado" type="number">
+            <button class="form-calculator__form--button" type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button class="form-calculator__form--button" type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+        <span id="solucion-cuadrado" class="solucion"></span>
+    </section>
+
+    <section class="form-calculator">
+        <h2 class="form-calculator__title">Calcula el Area y perimetro de un triangulo</h2>
+        <form class="form-calculator__form" for="imput-triangulo">
+            <label class="form-calculator__form--label">Lado 1 del triangulo </label>
+            <input class="form-calculator__form--input" id= "input-lado1" type="number">
+            <label class="form-calculator__form--label">Lado 2 del triangulo </label>
+            <input class="form-calculator__form--input" id= "input-lado2" type="number">
+            <label class="form-calculator__form--label">Base del triangulo </label>
+            <input class="form-calculator__form--input" id= "input-base" type="number">
+            <label class="form-calculator__form--label">Alto del triangulo </label>
+            <input class="form-calculator__form--input" id= "input-altura" type="number">
+            <button class="form-calculator__form--button" type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+            <button class="form-calculator__form--button" type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+            <button class="form-calculator__form--button" type="button" onclick="calcularAlturaTriangulo()">Calcular el altura</button>
+        </form>
+        <span id="solucion-triangulo" class="solucion"></span>
+    </section>
+
+    <section class="form-calculator">
+        <h2 class="form-calculator__title">Calcula el Area y perimetro de un ciruclo</h2>
+        <form class="form-calculator__form" for="imput-circulo">
+            <label class="form-calculator__form--label">Radio del circulo</label>
+            <input class="form-calculator__form--input" id= "input-radio" type="number">
+            <button class="form-calculator__form--button" type="button" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+            <button class="form-calculator__form--button" type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+        </form>
+        <span id="solucion-circulo" class="solucion"></span>
+    </section>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
