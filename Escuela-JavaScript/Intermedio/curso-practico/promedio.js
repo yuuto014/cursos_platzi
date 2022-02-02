@@ -41,7 +41,7 @@ function calcularMediaAritmetica(lista){
 
 function calcularMediaFeometrica(lista){
     let sumaLista = lista.reduce( function( valorAcumulado=0, nuevoElemento){
-        return valorAcumulado + nuevoElemento;
+        return valorAcumulado * nuevoElemento;
     });
 
     let promedioLista = Math.pow(sumaLista, (1/lista.length));
